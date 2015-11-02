@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="mbApp" ng-controller="MbCtrl">
+<head>
+	<title>mb app</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.js"></script>
+
+	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.indigo-pink.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Black+Ops+One|Kaushan+Script|Ubuntu:400,700' rel='stylesheet' type='text/css'>
+	
+</head>
+  <body class="mdl-color--deep-purple-100">
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+	  <header class="mdl-layout__header">
+	    <div class="mdl-layout__header-row">
+	      <span class="mdl-layout-title mdl-color-text--blue-100 left-brand">Soju's</span>
+	      <span class="mdl-layout-title mdl-color-text--blue-400 right-brand">MB TOOLS</span>
+	      <div class="mdl-layout-spacer"></div>
+	      <nav class="mdl-navigation">
+	        <a class="mdl-navigation__link" href="http://forums.anarchy-online.com/showthread.php?611805-Soju-s-Multiboxing-Guide">Link to Guide</a>
+	      </nav>
+	    </div>
+	  </header>
+	  <div class="mdl-layout__drawer">
+	    <span class="mdl-layout-title">Soju's MB TOOLS</span>
+	    <nav class="mdl-navigation">
+	      <a class="mdl-navigation__link" href="http://forums.anarchy-online.com/showthread.php?611805-Soju-s-Multiboxing-Guide">Link to Guide</a>
+	    </nav>
+	  </div>
+	  <main class="mdl-layout__content">
+
+	  <%= yield %>
+
+	  </main>
+		<footer class="mdl-mini-footer">
+		  <div class="mdl-mini-footer__left-section">
+		    <div class="mdl-logo">
+		      MB Script Maker
+		    </div>
+		    <ul class="mdl-mini-footer__link-list">
+		      <li><a href="http://www.seattlekkf.com">&copy SeattleKKF.com</a></li>
+		    </ul>
+		  </div>
+		  <div class="mdl-mini-footer__right-section">
+		    <button class="mdl-mini-footer__social-btn"></button>
+		    <button class="mdl-mini-footer__social-btn"></button>
+		    <button class="mdl-mini-footer__social-btn"></button>
+		  </div>
+		</footer>
+	</div>
+  </body>
+</html>
