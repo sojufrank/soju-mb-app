@@ -1716,3 +1716,9 @@ Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb062
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-02 00:09:04 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-02 00:23:54 -0800
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 221ms (Views: 211.2ms | ActiveRecord: 0.0ms)
