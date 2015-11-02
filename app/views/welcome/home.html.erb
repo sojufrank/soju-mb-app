@@ -74,13 +74,13 @@ h5 {
 <div class="mdl-grid">
     <div class="mdl-cell mdl-cell--3-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
     <div class="mdl-cell mdl-cell--6-col" align="center">
-        <div class="mb-card mdl-card mdl-shadow--8dp">
+        <div class="mb-card mdl-card mdl-shadow--8dp mdl-color--grey-300">
             <div class="mdl-card__title"></div>
             <h5 id="form-title">MB script Maker</h5>
             <div class="mdl-card__title"></div>
             <form name="mbForm" data-ng-submit="mbAdd()">
                 <input type="text" data-ng-model="altName" ng-minlength=3 placeholder="Enter Character Name" tabindex=1>
-                <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" tabindex=2>ADD</button>
+                <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary" tabindex=2>ADD</button>
                 <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" ng-click="mbClear()" tabindex=3>CLEAR</button>
             </form>
         </div>
@@ -91,7 +91,7 @@ h5 {
 <div class="mdl-grid">
     <div class="mdl-cell mdl-cell--3-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
     <div class="mdl-cell mdl-cell--6-col" align="center">
-        <div class="mb-card mdl-card mdl-shadow--8dp fade2" ng-if="mbAlts.length >= 1">
+        <div class="mb-card mdl-card mdl-shadow--8dp fade2 mdl-color--grey-300" ng-if="mbAlts.length >= 1">
 	        <div class="mdl-card__supporting-text" ng-if="mbAlts.length >= 1">
 				<hot-key></hot-key>
 			</div>
