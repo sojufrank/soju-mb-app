@@ -99,11 +99,12 @@ h5 {
     </div>
     <div class="mdl-cell mdl-cell--3-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
 </div>
-
 <script>
 angular.module('mbApp', ['ngAnimate'])
 .controller('MbCtrl', function($scope){
 	$scope.mbAlts = [];
+  $scope.copy = "hello world";
+  $scope.copy = document.getElementById("copy");
 
 	$scope.mbAdd = function(){
 		$scope.mbAlts.push($scope.altName.substring(0,1).toUpperCase() + $scope.altName.substring(1));
